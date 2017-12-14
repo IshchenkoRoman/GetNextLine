@@ -20,9 +20,9 @@ a variable in a function can vary depending on the call of that very function.
  2.  What we call a “line” is a succession of characters that end with ’\n’ (ascii code 0x0a) or with End Of File (EOF).
  3.  Function prototyped as follow :
      - ``` int get_next_line(const int fd, char **line); ``` 
- 4.  The first parameter is the file descriptor that will be used to rea
+ 4.  The first parameter is the file descriptor that will be used to read.
  5.  The second parameter is the address of a pointer to a character that will be used
-      to save the line read from the file descriptor
+      to save the line read from the file descriptor.
  6.  The return value can be 1, 0 or -1 depending on whether a line has been read,
       when the reading has been completed, or if an error has happened respectively.
  7.  Function *get_next_line* return its result without ’\n’.
